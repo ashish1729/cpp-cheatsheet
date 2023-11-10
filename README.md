@@ -1,6 +1,26 @@
 # cpp-cheatsheet
 snippets for cpp competitive programming
 
+## data type range
+
+code to generate these values
+
+`cout << "short" << " | " << numeric_limits<short>::max() << nl;`
+
+|type|max|
+|--|--|
+|short | 32767
+|unsigned short | 65535
+|int | 2147483647
+|unsigned int | 4294967295
+|long | 9223372036854775807
+|long long | 9223372036854775807
+|unsigned long long | 18446744073709551615
+|unsigned long | 18446744073709551615
+|float | 3.40282e+38
+|double | 1.79769e+308
+|long double | 1.18973e+4932
+
 ## Binary
 ``` cpp
 a + ~a = -1; // it sets all 1s
