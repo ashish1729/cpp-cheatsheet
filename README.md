@@ -1,7 +1,7 @@
 # cpp-cheatsheet
 snippets for cpp competitive programming
 
-## data type range
+## Numeric data type range
 
 code to generate these values
 
