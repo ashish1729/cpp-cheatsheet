@@ -1,6 +1,30 @@
 # cpp-cheatsheet
 snippets for cpp competitive programming
 
+## alternative operators
+
+|Primary|Alternative|
+|-|-|
+|  &&	| and	|
+|  &=	| and_eq	|
+|  &	| bitand	|
+|  |	| bitor	|
+|  ~	| compl	|
+|  !	| not	|
+|  !=	| not_eq	|
+|  ||	| or	|
+|  |=	| or_eq	|
+|  ^	| xor	|
+|  ^=	| xor_eq	|
+|  {	| <%	|
+|  }	| %>	|
+|  [	| <:	|
+|  ]	| :>	|
+|  #	| %:	|
+|  ##	| %:%:	|
+
+
+
 ## Numeric data type range
 
 code to generate these values
