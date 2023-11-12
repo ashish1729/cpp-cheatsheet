@@ -8,12 +8,12 @@ snippets for cpp competitive programming
 |  &&	| and	|
 |  &=	| and_eq	|
 |  &	| bitand	|
-|  |	| bitor	|
+|  \|	| bitor	|
 |  ~	| compl	|
 |  !	| not	|
 |  !=	| not_eq	|
-|  ||	| or	|
-|  |=	| or_eq	|
+|  \|\|	| or	|
+|  \|=	| or_eq	|
 |  ^	| xor	|
 |  ^=	| xor_eq	|
 |  {	| <%	|
