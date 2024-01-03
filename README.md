@@ -9,6 +9,31 @@ snippets for cpp competitive programming
   - I don't understand all of them because I don't know types in CPP properly right now ( like class, pointer, function pointer etc.), so just copy paste for now :P
 
 1. using a class or struct
+```cpp
+struct compStruct
+{
+    bool operator()(ii &a, ii &b)
+    {
+        return a.first > b.first;
+    }
+};
+
+int main() {
+    priority_queue<ii, vii, compStruct> years;
+}
+```
+```cpp
+class compClass {
+public:
+    bool operator() (ii &a, ii&b) {
+        return a.first > b.first;
+    }
+};
+
+int main() {
+      priority_queue<ii, vii, compClass> years;
+}
+```
 2. by defining a function ( type is pointer in this case )
 ```cpp
   bool cmp(ii a, ii b) {
