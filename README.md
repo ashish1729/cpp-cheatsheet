@@ -1,5 +1,6 @@
 # cpp-cheatsheet
 snippets for cpp competitive programming
+[link to repo](https://github.com/ashish1729/cpp-cheatsheet/edit/main/README.md)
 
 ## Heap
 
