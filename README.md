@@ -7,7 +7,20 @@ snippets for cpp competitive programming
 
 - to create a max heap you have to pass a custom comparing logic, below are some ways to pass custom comparator
   - I don't understand all of them because I don't know types in CPP properly right now ( like class, pointer, function pointer etc.), so just copy paste for now :P
-  
+
+1. using a class or struct
+2. by defining a function
+```cpp
+bool cmp(ii a, ii b) {
+    return a.first > b.first;
+}
+
+int main() {
+  priority_queue<ii, vii, decltype(cmp)*> pqName(cmp);
+}
+```
+3. by defining a lambda function
+4. extending the class with operator overloading
 
 ## alternative operators
 
