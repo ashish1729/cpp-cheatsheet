@@ -11,22 +11,22 @@ snippets for cpp competitive programming
 1. using a class or struct
 2. by defining a function ( type is pointer in this case )
 ```cpp
-bool cmp(ii a, ii b) {
-    return a.first > b.first;
-}
-
-int main() {
-  priority_queue<ii, vii, decltype(cmp)*> pqName(cmp);
-}
+  bool cmp(ii a, ii b) {
+      return a.first > b.first;
+  }
+  
+  int main() {
+    priority_queue<ii, vii, decltype(cmp)*> pqName(cmp);
+  }
 ```
 ```cpp
-bool cmp(ii a, ii b) {
-    return a.first > b.first;
-}
-
-int main() {
-    priority_queue<ii, vii, function<bool(ii,ii)>> pqName(cmp);
-}
+  bool cmp(ii a, ii b) {
+      return a.first > b.first;
+  }
+  
+  int main() {
+      priority_queue<ii, vii, function<bool(ii,ii)>> pqName(cmp);
+  }
 ```
 3. by defining a lambda function ( note that it is not a pointer in this case )
 ```cpp
