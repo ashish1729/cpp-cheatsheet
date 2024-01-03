@@ -1,6 +1,14 @@
 # cpp-cheatsheet
 snippets for cpp competitive programming
 
+## Heap
+
+**by default priority_queue in cpp is MAX-HEAP, this is important because in Java it is MIN-HEAP by default**
+
+- to create a max heap you have to pass a custom comparing logic, below are some ways to pass custom comparator
+  - I don't understand all of them because I don't know types in CPP properly right now ( like class, pointer, function pointer etc.), so just copy paste for now :P
+  
+
 ## alternative operators
 
 |Primary|Alternative|
