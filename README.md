@@ -7,6 +7,7 @@ snippets for cpp competitive programming
 - **by default priority_queue in cpp is MAX-HEAP, this is important because in Java it is MIN-HEAP by default**
 
 - simple min-heap can be created using following code, but next points mention various other ways for custom comparator
+
   ```cpp
     priority_queue<int, vector<int>, greater<int>> pq;
   ```
@@ -49,6 +50,8 @@ snippets for cpp competitive programming
   }
   ```
 2. by defining a function ( type is pointer in this case )
+
+
   ```cpp
     bool cmp(ii a, ii b) {
         return a.first > b.first;
@@ -58,6 +61,7 @@ snippets for cpp competitive programming
       priority_queue<ii, vii, decltype(cmp)*> pqName(cmp);
     }
   ```
+
   ```cpp
     bool cmp(ii a, ii b) {
         return a.first > b.first;
@@ -68,11 +72,13 @@ snippets for cpp competitive programming
     }
   ```
 3. by defining a lambda function ( note that it is not a pointer in this case )
+
   ```cpp
   
       auto compareFun = [](ii a, ii b ) { return a.first > b.first;};
       priority_queue<ii, vii, decltype(compareFun)> pqName(compareFun);
   ```
+
   ```cpp
       auto compareFun = [](ii a, ii b ) { return a.first > b.first;};
       priority_queue<ii, vii, function<bool(ii,ii)>> pqName(compareFun);
