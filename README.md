@@ -3,9 +3,20 @@ snippets for cpp competitive programming
 
 ## Heap
 
-**by default priority_queue in cpp is MAX-HEAP, this is important because in Java it is MIN-HEAP by default**
+- **VERY IMPORTANT** that element on top of priority queue is the one which is last in the ordering defined 
+- **by default priority_queue in cpp is MAX-HEAP, this is important because in Java it is MIN-HEAP by default**
 
-- to create a max heap you have to pass a custom comparing logic, below are some ways to pass custom comparator
+- simple min-heap can be created using following code, but next points mention various other ways for custom comparator
+  ```cpp
+    priority_queue<int, vector<int>, greater<int>> pq;
+  ```
+
+- to create a min heap you have to pass a custom comparing logic, below are some ways to pass custom comparator
+  - in the following code I have used some typedefs
+    ```cpp
+    typedef pair<int, int> ii;
+    typedef vector<ii> vii;
+    ```
   - I don't understand all of them because I don't know types in CPP properly right now ( like class, pointer, function pointer etc.), so just copy paste for now :P
 
 1. using a class or struct
