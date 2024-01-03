@@ -20,60 +20,63 @@ snippets for cpp competitive programming
   - I don't understand all of them because I don't know types in CPP properly right now ( like class, pointer, function pointer etc.), so just copy paste for now :P
 
 1. using a class or struct
-```cpp
-struct compStruct
-{
-    bool operator()(ii &a, ii &b)
-    {
-        return a.first > b.first;
-    }
-};
 
-int main() {
-    priority_queue<ii, vii, compStruct> years;
-}
-```
-```cpp
-class compClass {
-public:
-    bool operator() (ii &a, ii&b) {
-        return a.first > b.first;
-    }
-};
-
-int main() {
-      priority_queue<ii, vii, compClass> years;
-}
-```
+  ```cpp
+  struct compStruct
+  {
+      bool operator()(ii &a, ii &b)
+      {
+          return a.first > b.first;
+      }
+  };
+  
+  int main() {
+      priority_queue<ii, vii, compStruct> pqName;
+  }
+  ```
+  
+  
+  ```cpp
+  class compClass {
+  public:
+      bool operator() (ii &a, ii&b) {
+          return a.first > b.first;
+      }
+  };
+  
+  int main() {
+        priority_queue<ii, vii, compClass> pqName;
+  }
+  ```
 2. by defining a function ( type is pointer in this case )
-```cpp
-  bool cmp(ii a, ii b) {
-      return a.first > b.first;
-  }
-  
-  int main() {
-    priority_queue<ii, vii, decltype(cmp)*> pqName(cmp);
-  }
-```
-```cpp
-  bool cmp(ii a, ii b) {
-      return a.first > b.first;
-  }
-  
-  int main() {
-      priority_queue<ii, vii, function<bool(ii,ii)>> pqName(cmp);
-  }
-```
+  ```cpp
+    bool cmp(ii a, ii b) {
+        return a.first > b.first;
+    }
+    
+    int main() {
+      priority_queue<ii, vii, decltype(cmp)*> pqName(cmp);
+    }
+  ```
+  ```cpp
+    bool cmp(ii a, ii b) {
+        return a.first > b.first;
+    }
+    
+    int main() {
+        priority_queue<ii, vii, function<bool(ii,ii)>> pqName(cmp);
+    }
+  ```
 3. by defining a lambda function ( note that it is not a pointer in this case )
-```cpp
-
-    auto compareFun = [](ii a, ii b ) { return a.first > b.first;};
-    priority_queue<ii, vii, decltype(compareFun)> pqName(compareFun);
-```
-```cpp
-    auto compareFun = [](ii a, ii b ) { return a.first > b.first;};
-    priority_queue<ii, vii, function<bool(ii,ii)>> pqName(compareFun);
-```
+  ```cpp
+  
+      auto compareFun = [](ii a, ii b ) { return a.first > b.first;};
+      priority_queue<ii, vii, decltype(compareFun)> pqName(compareFun);
+  ```
+  ```cpp
+      auto compareFun = [](ii a, ii b ) { return a.first > b.first;};
+      priority_queue<ii, vii, function<bool(ii,ii)>> pqName(compareFun);
+  ```
 4. extending the class with operator overloading
   - I don't know how to overload yet, so I will not write a snippet here, but here is one [youtube video explaining the same](https://www.youtube.com/watch?v=mQZshO2DY4Q)
 
