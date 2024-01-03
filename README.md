@@ -64,6 +64,7 @@ int main() {
     priority_queue<ii, vii, function<bool(ii,ii)>> pqName(compareFun);
 ```
 4. extending the class with operator overloading
+  - I don't know how to overload yet, so I will not write a snippet here, but here is one [youtube video explaining the same](https://www.youtube.com/watch?v=mQZshO2DY4Q)
 
 ## alternative operators
 
