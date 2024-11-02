@@ -141,6 +141,8 @@ a + ~a = -1; // it sets all 1s
 a^b = (a - (a&b)) + (b - (a&b));  // bits of a which are not in b + bits of b which are not in a
 a^b = a + b - 2 * (a&b); // simplifying last line
 a^b = (a|b) - (a&b);     // using value of a + b from above , easy to see in venn diagram also , because xor is symmetric difference
+
+some other equations at [codeforce blog](https://codeforces.com/blog/entry/94470)
 ```
 
 
