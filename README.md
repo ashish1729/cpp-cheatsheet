@@ -3,6 +3,10 @@ snippets for cpp competitive programming
 
 [link to repo](https://github.com/ashish1729/cpp-cheatsheet)
 
+## Older version
+
+[version 1](https://ashish1729.github.io/cpp-cheatsheet/README_old)
+
 ## Binary
 ``` cpp
 a + ~a = -1; // it sets all 1s
@@ -17,6 +21,10 @@ some other equations at [codeforce blog](https://codeforces.com/blog/entry/94470
 ```
 
 ## Multinomial to binomial formula 
+
+<img width="557" height="48" alt="image" src="https://github.com/user-attachments/assets/dc3ed98d-314c-4c0b-ab19-087311f9f1e3" />
+
+
 
 ```math
 \frac{(C_{1} + C_{2} + ... + C_{N})!}{C_{1}! C_{2}! ... C_{N}!} = \binom{C_{1}}{C_{1}}\binom{C_{1} + C_{2}}{C_{2}}...\binom{C_{1} + C_{2} + ... + C_{N}}{C_{N}}
