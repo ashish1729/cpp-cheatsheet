@@ -145,6 +145,11 @@ a^b = (a|b) - (a&b);     // using value of a + b from above , easy to see in ven
 some other equations at [codeforce blog](https://codeforces.com/blog/entry/94470)
 ```
 
+## Multinomial to binomial formula 
+
+```math
+\frac{(C_{1} + C_{2} + ... + C_{N})!}{C_{1}! C_{2}! ... C_{N}!} = \binom{C_{1}}{C_{1}}\binom{C_{1} + C_{2}}{C_{2}}...\binom{C_{1} + C_{2} + ... + C_{N}}{C_{N}}
+```
 
 ## STL
 
@@ -164,4 +169,5 @@ set.erase(2);
 set.clear();
 set.find(2) != set.end() // checks existence
 ```
+
 
